@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Payment form</title>
+	<link rel="stylesheet" type="text/css" href="/assets/style.css">
+</head>
+<body>
+	<button class="transfer-btn hide">Transfer</button>
+
+<!-- FIRST FORM -->
+	<form class="form-1 hide">
+		<h1>Sender's detail/Login</h1>
+		<div class="sender-name">
+			<label for="name">Name:</label>
+			<input id="name" type="text" placeholder="Name">
+		</div>
+
+		<div class="sender-password">
+			<label for="password">Password:</label>
+			<input id="password" type="password" placeholder="*******">
+		</div>
+
+		<div class="next-btn">
+			<button class="btn login-btn">Login</button>
+		</div>
+	</form>
+
+<!-- SECOND FORM -->
+	<form class="form-2 show">
+		<div class="select-country">
+			<label for="country">Country:</label>
+			<select id="country" required>
+				<option value="">Select country</option>
+				<option value="NGN">Nigeria</option>
+				<option value="GHS">Ghana</option>
+			</select>
+			<p class="error">Please select a country</p>
+		</div>
+
+		<div class="next-btn">
+			<button class="btn country-btn">Next </button>
+		</div>
+	</form>
+
+<!-- THIRD FORM -->
+	<form class="form-3 hide">
+		<div class="bank-details">
+			<label for="bank">Bank:</label>
+			<select>
+				<option value="">Select bank</option>
+			</select>
+		</div>
+
+		<div class="account-number">
+			<label for="account-num">Account number:</label>
+			<input id="account-num" type="text" placeholder="0123456789">
+		</div>
+
+		<div class="next-btn">
+			<button class="btn verify-account">Resolve Account </button>
+		</div>
+	</form>
+
+<!-- FOURTH FORM -->
+	<form class="form-4 hide">
+		<div class="account-name">
+			<label for="account-name">Account name:</label>
+			<input id="account-name" type="text" disabled>
+		</div>
+
+		<div class="transfer-amount">
+			<label for="amount">Amount(in kobo, pesewas or cents):</label>
+			<input id="amount" type="text" placeholder="5000">
+			<p class="error">Error</p>
+		</div>
+
+		<div class="next-btn">
+			<button class="btn send-money-btn">Transfer</button>
+		</div>
+	</form>
+
+	<script src="/assets/form.js"></script>
+</body>
+</html>
